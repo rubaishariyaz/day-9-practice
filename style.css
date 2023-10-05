@@ -1,0 +1,152 @@
+/******************************Flexbox direction*****************************/
+/***Property***/
+.container {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 70%;
+   height: 400px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    /*flex-direction: column;*/
+   /*flex-direction: column-reverse;*/
+   flex-direction: row;
+   /*flex-direction: row-reverse;*/
+}
+.h1 {
+    text-align: center;
+}
+.container div{
+    width: 200px;
+    height: 200px;
+}/*display flex sai hamare container mai box limit mai rahte h box bahir nh nikalte.
+/*flex-direction sai hum apne box ko row or column direction mai la sakhte h or
+row, column reverse mai la sakhte h*/
+
+/*****************************justify-content*****************************************/
+/***property***/
+.content {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 90%;
+    height: 500px;
+    text-align: center;
+    color: aliceblue;
+    justify-content: flex-start;
+   /* justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/ /* is property se boxes ke between mai distance hota h.*/
+    justify-content: space-around; /*is property se boxes ke between mai distance hota h or box ke left or right mai distance hota h laykin equal nh hota*/
+    /*justify-content: space-evenly;*//* jab key is property se distance equal hojata h*/
+    display: flex;
+}
+.content div{
+    width: 200px;
+    height: 200px;
+}
+/*justify-content sai hum apne container mai boxes ko start,end or center mai la skhte h.
+
+/**********************************flex-wrap**********************************/
+/*property*/
+.contract {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+   /* flex-wrap: nowrap;*/ /*is say first line mai boxes lagy gai*/
+   /*flex-wrap: wrap;*/ /* humne container banaya ab os container mai jo boxes h jitna space hoga otny he boxes anyge baki box niche chale jynge or niche wale boxes ke sath bhi aisa hoga.*/ 
+   flex-wrap: wrap-reverse;/* is property se reverse hojyga*/
+   flex-direction: row;
+   justify-content:flex-start ;
+}
+.contract div{
+    width: 250px;
+    height: 100px;
+    font-size: 1.2rem;
+}
+
+/*****************************align items********************************/
+/*property*/
+.box1{
+    font-size: 3.5rem;
+}
+.consist div{
+    width: 250px;
+    height: 150px;
+    color: black;
+}
+.consist {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    justify-content: baseline;/* hum apne box mai kisi bhi box ke height barha denge to hum is property ka use kr ky hamare boxes ke under jo text hoga wo sab same hojye ga*/ 
+}
+/* justify-content or align items ke property same hote h*/
+
+
+/********************************Align-content**********************/
+/*property*/
+.construction {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 90%;
+    height: 500px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    /*align-content: flex-start;*/
+    /*align-content: flex-end;*/
+    /*align-content: center;*/
+    /*align-content: space-around;*/
+    /*align-content: space-between;*/
+    align-content: baseline;
+    flex-wrap: wrap;
+
+}
+.construction div{
+    width: 250px;
+    height: 150px;
+    color: black;
+}
+/*align-content, align-items ke property eik hote h*/
+
+
+/**********************align-self***************************/
+/*property*/
+.construction {
+    border: 2px solid black;
+    margin: 10px auto;
+    width: 90%;
+    height: 500px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+   /* align-self: flex-start;*/
+    align-self: center;
+    /*align-self: center;*/
+    /*align-self: baseline;*/
+}
+.purple{
+   align-items: flex-start;
+} 
+/*align-item, align-self ke propperty eik hote h laykin different bas yehe hota 
+ align-item, align-self, ke property sth means oper niche likh de to align-self ke property kaam kerte hai.
+ align-items nh.  
+
+ /*COMPLETE DAY:9 NOTES*/
